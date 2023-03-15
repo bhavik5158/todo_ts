@@ -37,6 +37,10 @@ function App() {
     const deleteTask = (ind:number) => {
         setTodoList(todoList.filter((ele, i:number) => {return i != ind? ele : null}))
     }
+
+    const resetTodo = () => {
+        setTodoList([])
+    }
   return (
     <>
         <div className='container-fluid'>
@@ -47,6 +51,7 @@ function App() {
                 </div>
                 <div className=''>
                     <Button className='m-1' onClick={add}>Add Task</Button>
+                    <Button color='danger' className='m-1' onClick={resetTodo}>Reset</Button>
                 </div>
             </Col>
             <Col>
