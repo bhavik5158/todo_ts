@@ -48,7 +48,6 @@ function App() {
                 <div className=''>
                     <input type="text" name="taskInp" value={taskInp} onChange={handleInputs} placeholder='Enter Task here...'/> <br/>
                     <input type="number" name="hourInp" value={hourInp} onChange={handleInputs} placeholder='Enter No of hours' />
-                    <input type="text" name="" id="" />
                 </div>
                 <div className=''>
                     <Button className='m-1' onClick={add}>Add Task</Button>
